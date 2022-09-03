@@ -1,0 +1,121 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 20px;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: max-content 200px 1fr;
+  margin: 0;
+  padding: .3rem;
+  background-color: #eee;
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+.card h2 {
+  background-color: rgb(255, 255, 255);
+  margin: .5rem;
+  padding: .3rem;
+  font-size: 1.2rem;
+  border: 1px solid black;
+}
+
+.card footer {
+  background-color: rgb(255, 255, 255);
+  margin: .5rem;
+  padding: .3rem;
+  font-size: 1rem;
+  border: 1px solid black;
+}
+
+.content {
+  text-align: justify;
+  padding: 15px;
+}
+
+input {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  width: 300px;
+}
+
+.selectedChoices {
+  padding: 15px
+}
+
+.choice { 
+  border-radius: 12px;
+  background-color: rgb(193, 193, 193);
+  font-size: 1rem;
+  padding: 5px;
+  display: inline-block
+}
+
+.noChoice {
+  color: #c4c2c2;
+  padding: 10px;
+}
+
+.choices {
+  margin: auto;
+  border: 1px solid #c4c2c2;
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  max-height: 150px;
+  width: calc(250px + 1rem);
+  overflow-y: auto;
+  padding-left: 0;
+}
+
+.choices li {
+  padding: 0.5rem;
+}
+
+.choices li:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
