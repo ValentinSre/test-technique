@@ -46,7 +46,7 @@ function App() {
       <h1> Magic The Gathering </h1>
       <div>
         <AutocompleteComponent values={allTypes} placeholder={"Types"} allCards = {allCards} setCards={setCards}/>
-        <AutocompleteComponent values={allRarities} placeholder={"Rarity"}/>
+        <AutocompleteComponent values={allRarities} placeholder={"Rarity"} allCards = {allCards} setCards={setCards}/>
         {NameForm()}
       </div>
 

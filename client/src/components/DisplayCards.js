@@ -1,5 +1,5 @@
 
-const rarities = [
+export const rarities = [
     { value: 'Common', color: '#2e2e2e' },
     { value: 'Uncommon', color: '#ababab' },
     { value: 'Rare', color: '#ffca00' },
